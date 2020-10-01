@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="inst">
+        Ever wonder how birds know where to fly when in a giant flock? How do they decide where to go, and how does the flock make it to their destination? Is there an "alpha bird" that tells them where to fly?
+        <br/>
+        <br/>
+        The following experiment uses D3 to generate simulated birds. It turns out birds follow 3 simple instructions. I created an infinite loop to simulate time, and each "tick" each bird makes a decision and moves following these three rules:
+        <ol>
+            <li>Each bird aims for the center of the flock</li>
+            <li>Each bird avoids colliding with other birds</li>
+            <li>Try to match your velocity to the velocity of the other birds</li>
+        </ol>
+        If you follow these three rules, you too can fly in a flock like birds.
+
+    </div>
+    <canvas width="1000" height="500"></canvas>
+    <canvas width="1000" height="500" class="offscreen"></canvas>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.5/dat.gui.min.js"></script>
+    <script src="vect.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
